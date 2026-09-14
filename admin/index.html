@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Generar invitaciones - Conchita</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="admin-card">
+      <p class="eyebrow">INVITACIONES DE CONCHITA</p>
+      <h1>Crear invitación</h1>
+      <p class="intro">Escribe a quién va dirigida y cuántos lugares tendrá.</p>
+
+      <form id="inviteForm" novalidate>
+        <label for="recipient">Nombre o familia</label>
+        <input id="recipient" name="recipient" type="text" autocomplete="off" placeholder="Ej. Familia Hernández" maxlength="80" required />
+
+        <label for="places">Número de lugares</label>
+        <input id="places" name="places" type="number" inputmode="numeric" min="1" max="20" value="2" required />
+
+        <button class="primary" type="submit">GENERAR INVITACIÓN</button>
+      </form>
+
+      <section id="result" class="result hidden" aria-live="polite">
+        <div class="result-summary">
+          <span>Invitación generada para</span>
+          <strong id="resultRecipient"></strong>
+          <span id="resultPlaces"></span>
+        </div>
+
+        <label for="generatedUrl">Liga personalizada</label>
+        <textarea id="generatedUrl" rows="4" readonly></textarea>
+
+        <div class="actions">
+          <button id="copyLink" class="secondary" type="button">COPIAR LIGA</button>
+          <button id="copyMessage" class="secondary" type="button">COPIAR MENSAJE COMPLETO</button>
+          <a id="openInvite" class="secondary link-button" target="_blank" rel="noopener">VER INVITACIÓN</a>
+          <a id="shareWhatsapp" class="whatsapp link-button" target="_blank" rel="noopener">ENVIAR POR WHATSAPP</a>
+        </div>
+
+        <div id="copyNotice" class="notice" role="status"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
