@@ -33,7 +33,7 @@ function getInvitationBaseUrl() {
 }
 
 function buildGuestMessage(url) {
-  return `Hola, me dará mucho gusto que me acompañes en mi celebración el domingo 22 de noviembre de 2026 a la 1:00 PM. Aquí puedes ver tu invitación: ${url}`;
+  return `Hola. Me dará mucho gusto contar con su compañía en mi celebración el domingo 22 de noviembre de 2026 a la 1:00 PM. Aquí puede ver su invitación: ${url}`;
 }
 
 function showNotice(message) {
