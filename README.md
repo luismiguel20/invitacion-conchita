@@ -4,7 +4,7 @@ Invitación web para la celebración de Conchita.
 
 - **Fecha:** domingo 22 de noviembre de 2026
 - **Hora:** 1:00 PM
-- **Lugar:** Salón de Eventos Lúaj
+- **Lugar:** Salón Campestre Los Fresnos
 - **Diseño:** mobile-first
 - **Hosting previsto:** GitHub Pages
 
